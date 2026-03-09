@@ -1,0 +1,42 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buzzing Faucet</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/ethers@6.13.5/dist/ethers.umd.min.js"></script>
+  </head>
+  <body>
+    <main class="card">
+      <h1>Buzzing Faucet</h1>
+      <p class="desc">Connect wallet, enter recipient address, then claim 10,000 USDC (one-time per recipient).</p>
+
+      <div class="field">
+        <label>Faucet Contract Address</label>
+        <input id="faucetAddress" disabled />
+      </div>
+
+      <div class="field">
+        <label for="recipientAddress">Recipient Address</label>
+        <input id="recipientAddress" placeholder="0x..." />
+      </div>
+
+      <div class="actions">
+        <button id="connectBtn">Connect Wallet</button>
+        <button id="claimBtn" disabled>Claim 10,000 USDC</button>
+      </div>
+
+      <div class="status" id="status">Not connected</div>
+      <ul class="meta">
+        <li>Current account: <span id="account">-</span></li>
+        <li>Recipient claimed: <span id="claimed">-</span></li>
+        <li>Faucet balance: <span id="faucetBalance">-</span></li>
+      </ul>
+    </main>
+
+    <script src="./config.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
+

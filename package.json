@@ -1,0 +1,21 @@
+﻿{
+  "name": "usdc-faucet-demo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "compile": "hardhat compile",
+    "node": "hardhat node",
+    "deploy:local": "hardhat run scripts/deploy.js --network localhost",
+    "deploy:hardhat": "hardhat run scripts/deploy.js",
+    "deploy:faucet": "hardhat run scripts/deploy-faucet.js",
+    "deploy:basesepolia": "hardhat run scripts/deploy-faucet.js --network baseSepolia",
+    "serve:frontend": "http-server frontend -p 5173 -c-1",
+    "start": "hardhat compile"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "ethers": "^5.7.2",
+    "hardhat": "2.22.10",
+    "http-server": "^14.1.1"
+  }
+}

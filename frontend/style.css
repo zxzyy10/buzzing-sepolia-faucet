@@ -1,0 +1,95 @@
+:root {
+  --bg: #f4f8ff;
+  --card: #ffffff;
+  --text: #17324d;
+  --subtle: #5f7388;
+  --primary: #1b7bff;
+  --primary-hover: #1468d8;
+  --border: #dbe6f3;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: radial-gradient(circle at 20% 10%, #e5f0ff 0%, var(--bg) 55%);
+  color: var(--text);
+}
+
+.card {
+  width: min(92vw, 560px);
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 12px 36px rgba(20, 53, 94, 0.08);
+}
+
+h1 {
+  margin: 0 0 8px;
+}
+
+.desc {
+  margin-top: 0;
+  color: var(--subtle);
+}
+
+.field {
+  display: grid;
+  gap: 8px;
+  margin: 14px 0;
+}
+
+input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  margin: 12px 0 16px;
+}
+
+button {
+  border: 0;
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-weight: 600;
+  color: #fff;
+  background: var(--primary);
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--primary-hover);
+}
+
+button:disabled {
+  background: #9cb3cf;
+  cursor: not-allowed;
+}
+
+.status {
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: #eef4ff;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.meta {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--subtle);
+  line-height: 1.7;
+}

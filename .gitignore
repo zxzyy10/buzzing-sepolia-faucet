@@ -1,0 +1,6 @@
+﻿node_modules/
+artifacts/
+cache/
+.run-frontend.log
+.run-hardhat-node.log
+.env

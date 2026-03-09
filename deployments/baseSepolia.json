@@ -1,0 +1,8 @@
+{
+  "network": "baseSepolia",
+  "chainId": 84532,
+  "usdcAddress": "0xE43Ac8688D29A7212224bC2954c96c93f3b0b96E",
+  "faucetAddress": "0x044fc1bA7D6e742A6Ac778913028757d8507a1Da",
+  "claimAmount": "10000",
+  "decimals": 6
+}
